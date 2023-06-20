@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "project5valueinvestor"
+version = "0.1.0"
+description = ""
+authors = ["Rubén Chuliá Mena <rubchume@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+jupyterlab = "^4.0.1"
+pandas = "^2.0.2"
+openpyxl = "^3.1.2"
+gspread = "^5.9.0"
+plotly = "^5.14.1"
+statsmodels = "^0.14.0"
+matplotlib = "^3.7.1"
+tqdm = "^4.65.0"
+ipywidgets = "^8.0.6"
+jupyterlab-widgets = "^3.0.7"
+jupyter-contrib-nbextensions = "^0.7.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
