@@ -21,6 +21,17 @@ test = ["anyio[trio]", "coverage[toml] (>=4.5)", "hypothesis (>=4.0)", "mock (>=
 trio = ["trio (<0.22)"]
 
 [[package]]
+name = "appdirs"
+version = "1.4.4"
+description = "A small Python module for determining appropriate platform-specific dirs, e.g. a \"user data dir\"."
+optional = false
+python-versions = "*"
+files = [
+    {file = "appdirs-1.4.4-py2.py3-none-any.whl", hash = "sha256:a841dacd6b99318a741b166adb07e19ee71a274450e68237b4650ca1055ab128"},
+    {file = "appdirs-1.4.4.tar.gz", hash = "sha256:7d5d0167b2b1ba821647616af46a749d1c653740dd0d2415100fe26e27afdf41"},
+]
+
+[[package]]
 name = "appnope"
 version = "0.1.3"
 description = "Disable App Nap on macOS >= 10.9"
@@ -164,6 +175,19 @@ files = [
     {file = "backcall-0.2.0-py2.py3-none-any.whl", hash = "sha256:fbbce6a29f263178a1f7915c1940bde0ec2b2a967566fe1c65c1dfb7422bd255"},
     {file = "backcall-0.2.0.tar.gz", hash = "sha256:5cbdbf27be5e7cfadb448baf0aa95508f91f2bbc6c6437cd9cd06e2a4c215e1e"},
 ]
+
+[[package]]
+name = "backtrader"
+version = "1.9.78.123"
+description = "BackTesting Engine"
+optional = false
+python-versions = "*"
+files = [
+    {file = "backtrader-1.9.78.123-py2.py3-none-any.whl", hash = "sha256:9a07a516b0de9155539a35c56e9404d8711dd7020b3d37b30495e83e1b9d5dfd"},
+]
+
+[package.extras]
+plotting = ["matplotlib"]
 
 [[package]]
 name = "beautifulsoup4"
@@ -637,6 +661,21 @@ files = [
 devel = ["colorama", "json-spec", "jsonschema", "pylint", "pytest", "pytest-benchmark", "pytest-cache", "validictory"]
 
 [[package]]
+name = "filelock"
+version = "3.12.2"
+description = "A platform independent file lock."
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "filelock-3.12.2-py3-none-any.whl", hash = "sha256:cbb791cdea2a72f23da6ac5b5269ab0a0d161e9ef0100e653b69049a7706d1ec"},
+    {file = "filelock-3.12.2.tar.gz", hash = "sha256:002740518d8aa59a26b0c76e10fb8c6e15eae825d34b6fdf670333fd7b938d81"},
+]
+
+[package.extras]
+docs = ["furo (>=2023.5.20)", "sphinx (>=7.0.1)", "sphinx-autodoc-typehints (>=1.23,!=1.23.4)"]
+testing = ["covdefaults (>=2.3)", "coverage (>=7.2.7)", "diff-cover (>=7.5)", "pytest (>=7.3.1)", "pytest-cov (>=4.1)", "pytest-mock (>=3.10)", "pytest-timeout (>=2.1)"]
+
+[[package]]
 name = "fonttools"
 version = "4.40.0"
 description = "Tools to manipulate font files"
@@ -705,6 +744,52 @@ files = [
 ]
 
 [[package]]
+name = "frozendict"
+version = "2.3.8"
+description = "A simple immutable dictionary"
+optional = false
+python-versions = ">=3.6"
+files = [
+    {file = "frozendict-2.3.8-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:d188d062084fba0e4bf32719ff7380b26c050b932ff164043ce82ab90587c52b"},
+    {file = "frozendict-2.3.8-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:f2a4e818ac457f6354401dcb631527af25e5a20fcfc81e6b5054b45fc245caca"},
+    {file = "frozendict-2.3.8-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:9a506d807858fa961aaa5b48dab6154fdc6bd045bbe9310788bbff141bb42d13"},
+    {file = "frozendict-2.3.8-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:750632cc890d8ee9484fe6d31b261159144b6efacc08e1317fe46accd1410373"},
+    {file = "frozendict-2.3.8-cp310-cp310-musllinux_1_1_aarch64.whl", hash = "sha256:7ee5fe2658a8ac9a57f748acaf563f6a47f80b8308cbf0a04fac0ba057d41f75"},
+    {file = "frozendict-2.3.8-cp310-cp310-musllinux_1_1_x86_64.whl", hash = "sha256:23c4bb46e6b8246e1e7e49b5593c2bc09221db0d8f31f7c092be8dfb42b9e620"},
+    {file = "frozendict-2.3.8-cp310-cp310-win_amd64.whl", hash = "sha256:c31abc8acea309b132dde441856829f6003a3d242da8b54bce4c0f2a3c8c63f0"},
+    {file = "frozendict-2.3.8-cp310-cp310-win_arm64.whl", hash = "sha256:9ea5520e85447ff8d4681e181941e482662817ccba921b7cb3f87922056d892a"},
+    {file = "frozendict-2.3.8-cp36-cp36m-macosx_10_9_x86_64.whl", hash = "sha256:f83fed36497af9562ead5e9fb8443224ba2781786bd3b92b1087cb7d0ff20135"},
+    {file = "frozendict-2.3.8-cp36-cp36m-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:e27c5c1d29d0eda7979253ec88abc239da1313b38f39f4b16984db3b3e482300"},
+    {file = "frozendict-2.3.8-cp36-cp36m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:e4c785de7f1a13f15963945f400656b18f057c2fc76c089dacf127a2bb188c03"},
+    {file = "frozendict-2.3.8-cp36-cp36m-musllinux_1_1_aarch64.whl", hash = "sha256:8cf35ddd25513428ec152614def9696afb93ae5ec0eb54fa6aa6206eda77ac4c"},
+    {file = "frozendict-2.3.8-cp36-cp36m-musllinux_1_1_x86_64.whl", hash = "sha256:ffc684773de7c88724788fa9787d0016fd75830412d58acbd9ed1a04762c675b"},
+    {file = "frozendict-2.3.8-cp36-cp36m-win_amd64.whl", hash = "sha256:4c258aab9c8488338634f2ec670ef049dbf0ab0e7a2fa9bc2c7b5009cb614801"},
+    {file = "frozendict-2.3.8-cp37-cp37m-macosx_10_9_x86_64.whl", hash = "sha256:47fc26468407fdeb428cfc89495b7921419e670355c21b383765482fdf6c5c14"},
+    {file = "frozendict-2.3.8-cp37-cp37m-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:6ea638228692db2bf94bce40ea4b25f4077588497b516bd16576575560094bd9"},
+    {file = "frozendict-2.3.8-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:7a75bf87e76c4386caecdbdd02a99e53ad43a6b5c38fb3d5a634a9fc9ce41462"},
+    {file = "frozendict-2.3.8-cp37-cp37m-musllinux_1_1_aarch64.whl", hash = "sha256:ed5a6c5c7a0f57269577c2a338a6002949aea21a23b7b7d06da7e7dced8b605b"},
+    {file = "frozendict-2.3.8-cp37-cp37m-musllinux_1_1_x86_64.whl", hash = "sha256:d086440328a465dea9bef2dbad7548d75d1a0a0d21f43a08c03e1ec79ac5240e"},
+    {file = "frozendict-2.3.8-cp37-cp37m-win_amd64.whl", hash = "sha256:0bc4767e2f83db5b701c787e22380296977368b0c57e485ca71b2eedfa11c4a3"},
+    {file = "frozendict-2.3.8-cp38-cp38-macosx_10_9_x86_64.whl", hash = "sha256:638cf363d3cbca31a341503cf2219eac52a5f5140449676fae3d9644cd3c5487"},
+    {file = "frozendict-2.3.8-cp38-cp38-macosx_11_0_arm64.whl", hash = "sha256:2b2fd8ce36277919b36e3c834d2389f3cd7ac068ae730c312671dd4439a5dd65"},
+    {file = "frozendict-2.3.8-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:3957d52f1906b0c85f641a1911d214255873f6408ab4e5ad657cc27a247fb145"},
+    {file = "frozendict-2.3.8-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:72cfe08ab8ae524e54848fa90b22d02c1b1ecfb3064438696bcaa4b953f18772"},
+    {file = "frozendict-2.3.8-cp38-cp38-musllinux_1_1_aarch64.whl", hash = "sha256:4742e76c4111bd09198d3ab66cef94be8506212311338f9182d6ef5f5cb60493"},
+    {file = "frozendict-2.3.8-cp38-cp38-musllinux_1_1_x86_64.whl", hash = "sha256:313ed8d9ba6bac35d7635cd9580ee5721a0fb016f4d2d20f0efa05dbecbdb1be"},
+    {file = "frozendict-2.3.8-cp38-cp38-win_amd64.whl", hash = "sha256:d3c6ce943946c2a61501c8cf116fff0892d11dd579877eb36e2aea2c27fddfef"},
+    {file = "frozendict-2.3.8-cp39-cp39-macosx_10_9_x86_64.whl", hash = "sha256:f0f573dc4861dd7ec9e055c8cceaf45355e894e749f621f199aab7b311ac4bdb"},
+    {file = "frozendict-2.3.8-cp39-cp39-macosx_11_0_arm64.whl", hash = "sha256:2b3435e5f1ca5ae68a5e95e64b09d6d5c645cadd6b87569a0b3019dd248c8d00"},
+    {file = "frozendict-2.3.8-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:145afd033ebfade28416093335261b8ec1af5cccc593482309e7add062ec8668"},
+    {file = "frozendict-2.3.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:da98427de26b5a2865727947480cbb53860089c4d195baa29c539da811cea617"},
+    {file = "frozendict-2.3.8-cp39-cp39-musllinux_1_1_aarch64.whl", hash = "sha256:5e82befa7c385a668d569cebbebbdf49cee6fea4083f08e869a1b08cfb640a9f"},
+    {file = "frozendict-2.3.8-cp39-cp39-musllinux_1_1_x86_64.whl", hash = "sha256:80abe81d36e889ceec665e06ec764a7638000fa3e7be09786ac4d3ddc64b76db"},
+    {file = "frozendict-2.3.8-cp39-cp39-win_amd64.whl", hash = "sha256:8ccc94ac781710db44e142e1a11ff9b31d02c032c01c6868d51fcbef73086225"},
+    {file = "frozendict-2.3.8-cp39-cp39-win_arm64.whl", hash = "sha256:e72dbc1bcc2203cef38d205f692396f5505921a5680f66aa9a7e8bb71fd38f28"},
+    {file = "frozendict-2.3.8-py311-none-any.whl", hash = "sha256:ba41a7ed019bd03b62d63ed3f8dea35b8243d1936f7c9ed4b5298ca45a01928e"},
+    {file = "frozendict-2.3.8.tar.gz", hash = "sha256:5526559eca8f1780a4ee5146896f59afc31435313560208dd394a3a5e537d3ff"},
+]
+
+[[package]]
 name = "google-auth"
 version = "2.17.3"
 description = "Google Authentication Library"
@@ -762,6 +847,27 @@ google-auth = ">=1.12.0"
 google-auth-oauthlib = ">=0.4.1"
 
 [[package]]
+name = "html5lib"
+version = "1.1"
+description = "HTML parser based on the WHATWG HTML specification"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
+files = [
+    {file = "html5lib-1.1-py2.py3-none-any.whl", hash = "sha256:0d78f8fde1c230e99fe37986a60526d7049ed4bf8a9fadbad5f00e22e58e041d"},
+    {file = "html5lib-1.1.tar.gz", hash = "sha256:b2e5b40261e20f354d198eae92afc10d750afb487ed5e50f9c4eaf07c184146f"},
+]
+
+[package.dependencies]
+six = ">=1.9"
+webencodings = "*"
+
+[package.extras]
+all = ["chardet (>=2.2)", "genshi", "lxml"]
+chardet = ["chardet (>=2.2)"]
+genshi = ["genshi"]
+lxml = ["lxml"]
+
+[[package]]
 name = "idna"
 version = "3.4"
 description = "Internationalized Domain Names in Applications (IDNA)"
@@ -804,6 +910,29 @@ docs = ["myst-parser", "pydata-sphinx-theme", "sphinx", "sphinx-autodoc-typehint
 pyqt5 = ["pyqt5"]
 pyside6 = ["pyside6"]
 test = ["flaky", "ipyparallel", "pre-commit", "pytest (>=7.0)", "pytest-asyncio", "pytest-cov", "pytest-timeout"]
+
+[[package]]
+name = "ipympl"
+version = "0.9.3"
+description = "Matplotlib Jupyter Extension"
+optional = false
+python-versions = "*"
+files = [
+    {file = "ipympl-0.9.3-py2.py3-none-any.whl", hash = "sha256:d113cd55891bafe9b27ef99b6dd111a87beb6bb2ae550c404292272103be8013"},
+    {file = "ipympl-0.9.3.tar.gz", hash = "sha256:49bab75c05673a6881d1aaec5d8ac81d4624f73d292d154c5fb7096f10236a2b"},
+]
+
+[package.dependencies]
+ipython = "<9"
+ipython-genutils = "*"
+ipywidgets = ">=7.6.0,<9"
+matplotlib = ">=3.4.0,<4"
+numpy = "*"
+pillow = "*"
+traitlets = "<6"
+
+[package.extras]
+docs = ["Sphinx (>=1.5)", "myst-nb", "sphinx-book-theme", "sphinx-copybutton", "sphinx-thebe", "sphinx-togglebutton"]
 
 [[package]]
 name = "ipython"
@@ -1592,6 +1721,34 @@ files = [
 ]
 
 [[package]]
+name = "mpmath"
+version = "1.3.0"
+description = "Python library for arbitrary-precision floating-point arithmetic"
+optional = false
+python-versions = "*"
+files = [
+    {file = "mpmath-1.3.0-py3-none-any.whl", hash = "sha256:a0b2b9fe80bbcd81a6647ff13108738cfb482d481d826cc0e02f5b35e5c88d2c"},
+    {file = "mpmath-1.3.0.tar.gz", hash = "sha256:7a28eb2a9774d00c7bc92411c19a89209d5da7c4c9a9e227be8330a23a25b91f"},
+]
+
+[package.extras]
+develop = ["codecov", "pycodestyle", "pytest (>=4.6)", "pytest-cov", "wheel"]
+docs = ["sphinx"]
+gmpy = ["gmpy2 (>=2.1.0a4)"]
+tests = ["pytest (>=4.6)"]
+
+[[package]]
+name = "multitasking"
+version = "0.0.11"
+description = "Non-blocking Python methods using decorators"
+optional = false
+python-versions = "*"
+files = [
+    {file = "multitasking-0.0.11-py3-none-any.whl", hash = "sha256:1e5b37a5f8fc1e6cfaafd1a82b6b1cc6d2ed20037d3b89c25a84f499bd7b3dd4"},
+    {file = "multitasking-0.0.11.tar.gz", hash = "sha256:4d6bc3cc65f9b2dca72fb5a787850a88dae8f620c2b36ae9b55248e51bcd6026"},
+]
+
+[[package]]
 name = "nbclassic"
 version = "1.0.0"
 description = "Jupyter Notebook as a Jupyter Server extension."
@@ -1716,6 +1873,24 @@ files = [
     {file = "nest_asyncio-1.5.6-py3-none-any.whl", hash = "sha256:b9a953fb40dceaa587d109609098db21900182b16440652454a146cffb06e8b8"},
     {file = "nest_asyncio-1.5.6.tar.gz", hash = "sha256:d267cc1ff794403f7df692964d1d2a3fa9418ffea2a3f6859a439ff482fef290"},
 ]
+
+[[package]]
+name = "networkx"
+version = "3.1"
+description = "Python package for creating and manipulating graphs and networks"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "networkx-3.1-py3-none-any.whl", hash = "sha256:4f33f68cb2afcf86f28a45f43efc27a9386b535d567d2127f8f61d51dec58d36"},
+    {file = "networkx-3.1.tar.gz", hash = "sha256:de346335408f84de0eada6ff9fafafff9bcda11f0a0dfaa931133debb146ab61"},
+]
+
+[package.extras]
+default = ["matplotlib (>=3.4)", "numpy (>=1.20)", "pandas (>=1.3)", "scipy (>=1.8)"]
+developer = ["mypy (>=1.1)", "pre-commit (>=3.2)"]
+doc = ["nb2plots (>=0.6)", "numpydoc (>=1.5)", "pillow (>=9.4)", "pydata-sphinx-theme (>=0.13)", "sphinx (>=6.1)", "sphinx-gallery (>=0.12)", "texext (>=0.6.7)"]
+extra = ["lxml (>=4.6)", "pydot (>=1.4.2)", "pygraphviz (>=1.10)", "sympy (>=1.10)"]
+test = ["codecov (>=2.1)", "pytest (>=7.2)", "pytest-cov (>=4.0)"]
 
 [[package]]
 name = "notebook"
@@ -2538,6 +2713,27 @@ files = [
 cffi = {version = "*", markers = "implementation_name == \"pypy\""}
 
 [[package]]
+name = "quantstats"
+version = "0.0.61"
+description = "Portfolio analytics for quants"
+optional = false
+python-versions = "*"
+files = [
+    {file = "QuantStats-0.0.61-py2.py3-none-any.whl", hash = "sha256:f934b8c68311ff40a410c80f11c595f6cf9b3430a60a94143af6a0dcc90cffb4"},
+    {file = "QuantStats-0.0.61.tar.gz", hash = "sha256:c6e6da227acb84bcf72f9e90780c975dae7f294f09a842dd645fdb889da8a304"},
+]
+
+[package.dependencies]
+matplotlib = ">=3.0.0"
+numpy = ">=1.16.5"
+pandas = ">=0.24.0"
+python-dateutil = ">=2.0"
+scipy = ">=1.2.0"
+seaborn = ">=0.9.0"
+tabulate = ">=0.8.0"
+yfinance = ">=0.1.70"
+
+[[package]]
 name = "requests"
 version = "2.31.0"
 description = "Python HTTP for Humans."
@@ -2696,6 +2892,27 @@ doc = ["matplotlib (>2)", "numpydoc", "pydata-sphinx-theme (==0.9.0)", "sphinx (
 test = ["asv", "gmpy2", "mpmath", "pytest", "pytest-cov", "pytest-xdist", "scikit-umfpack", "threadpoolctl"]
 
 [[package]]
+name = "seaborn"
+version = "0.12.2"
+description = "Statistical data visualization"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "seaborn-0.12.2-py3-none-any.whl", hash = "sha256:ebf15355a4dba46037dfd65b7350f014ceb1f13c05e814eda2c9f5fd731afc08"},
+    {file = "seaborn-0.12.2.tar.gz", hash = "sha256:374645f36509d0dcab895cba5b47daf0586f77bfe3b36c97c607db7da5be0139"},
+]
+
+[package.dependencies]
+matplotlib = ">=3.1,<3.6.1 || >3.6.1"
+numpy = ">=1.17,<1.24.0 || >1.24.0"
+pandas = ">=0.25"
+
+[package.extras]
+dev = ["flake8", "flit", "mypy", "pandas-stubs", "pre-commit", "pytest", "pytest-cov", "pytest-xdist"]
+docs = ["ipykernel", "nbconvert", "numpydoc", "pydata_sphinx_theme (==0.10.0rc2)", "pyyaml", "sphinx-copybutton", "sphinx-design", "sphinx-issues"]
+stats = ["scipy (>=1.3)", "statsmodels (>=0.10)"]
+
+[[package]]
 name = "send2trash"
 version = "1.8.2"
 description = "Send file to trash natively under Mac OS X, Windows and Linux"
@@ -2822,6 +3039,34 @@ develop = ["colorama", "cython (>=0.29.26)", "cython (>=0.29.28,<3.0.0)", "flake
 docs = ["ipykernel", "jupyter-client", "matplotlib", "nbconvert", "nbformat", "numpydoc", "pandas-datareader", "sphinx"]
 
 [[package]]
+name = "sympy"
+version = "1.12"
+description = "Computer algebra system (CAS) in Python"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "sympy-1.12-py3-none-any.whl", hash = "sha256:c3588cd4295d0c0f603d0f2ae780587e64e2efeedb3521e46b9bb1d08d184fa5"},
+    {file = "sympy-1.12.tar.gz", hash = "sha256:ebf595c8dac3e0fdc4152c51878b498396ec7f30e7a914d6071e674d49420fb8"},
+]
+
+[package.dependencies]
+mpmath = ">=0.19"
+
+[[package]]
+name = "tabulate"
+version = "0.9.0"
+description = "Pretty-print tabular data"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "tabulate-0.9.0-py3-none-any.whl", hash = "sha256:024ca478df22e9340661486f85298cff5f6dcdba14f3813e8830015b9ed1948f"},
+    {file = "tabulate-0.9.0.tar.gz", hash = "sha256:0095b12bf5966de529c0feb1fa08671671b3368eec77d7ef7ab114be2c068b3c"},
+]
+
+[package.extras]
+widechars = ["wcwidth"]
+
+[[package]]
 name = "tenacity"
 version = "8.2.2"
 description = "Retry code until it succeeds"
@@ -2883,6 +3128,45 @@ webencodings = ">=0.4"
 [package.extras]
 doc = ["sphinx", "sphinx_rtd_theme"]
 test = ["flake8", "isort", "pytest"]
+
+[[package]]
+name = "torch"
+version = "2.0.1"
+description = "Tensors and Dynamic neural networks in Python with strong GPU acceleration"
+optional = false
+python-versions = ">=3.8.0"
+files = [
+    {file = "torch-2.0.1-cp310-cp310-manylinux1_x86_64.whl", hash = "sha256:8ced00b3ba471856b993822508f77c98f48a458623596a4c43136158781e306a"},
+    {file = "torch-2.0.1-cp310-cp310-manylinux2014_aarch64.whl", hash = "sha256:359bfaad94d1cda02ab775dc1cc386d585712329bb47b8741607ef6ef4950747"},
+    {file = "torch-2.0.1-cp310-cp310-win_amd64.whl", hash = "sha256:7c84e44d9002182edd859f3400deaa7410f5ec948a519cc7ef512c2f9b34d2c4"},
+    {file = "torch-2.0.1-cp310-none-macosx_10_9_x86_64.whl", hash = "sha256:567f84d657edc5582d716900543e6e62353dbe275e61cdc36eda4929e46df9e7"},
+    {file = "torch-2.0.1-cp310-none-macosx_11_0_arm64.whl", hash = "sha256:787b5a78aa7917465e9b96399b883920c88a08f4eb63b5a5d2d1a16e27d2f89b"},
+    {file = "torch-2.0.1-cp311-cp311-manylinux1_x86_64.whl", hash = "sha256:e617b1d0abaf6ced02dbb9486803abfef0d581609b09641b34fa315c9c40766d"},
+    {file = "torch-2.0.1-cp311-cp311-manylinux2014_aarch64.whl", hash = "sha256:b6019b1de4978e96daa21d6a3ebb41e88a0b474898fe251fd96189587408873e"},
+    {file = "torch-2.0.1-cp311-cp311-win_amd64.whl", hash = "sha256:dbd68cbd1cd9da32fe5d294dd3411509b3d841baecb780b38b3b7b06c7754434"},
+    {file = "torch-2.0.1-cp311-none-macosx_10_9_x86_64.whl", hash = "sha256:ef654427d91600129864644e35deea761fb1fe131710180b952a6f2e2207075e"},
+    {file = "torch-2.0.1-cp311-none-macosx_11_0_arm64.whl", hash = "sha256:25aa43ca80dcdf32f13da04c503ec7afdf8e77e3a0183dd85cd3e53b2842e527"},
+    {file = "torch-2.0.1-cp38-cp38-manylinux1_x86_64.whl", hash = "sha256:5ef3ea3d25441d3957348f7e99c7824d33798258a2bf5f0f0277cbcadad2e20d"},
+    {file = "torch-2.0.1-cp38-cp38-manylinux2014_aarch64.whl", hash = "sha256:0882243755ff28895e8e6dc6bc26ebcf5aa0911ed81b2a12f241fc4b09075b13"},
+    {file = "torch-2.0.1-cp38-cp38-win_amd64.whl", hash = "sha256:f66aa6b9580a22b04d0af54fcd042f52406a8479e2b6a550e3d9f95963e168c8"},
+    {file = "torch-2.0.1-cp38-none-macosx_10_9_x86_64.whl", hash = "sha256:1adb60d369f2650cac8e9a95b1d5758e25d526a34808f7448d0bd599e4ae9072"},
+    {file = "torch-2.0.1-cp38-none-macosx_11_0_arm64.whl", hash = "sha256:1bcffc16b89e296826b33b98db5166f990e3b72654a2b90673e817b16c50e32b"},
+    {file = "torch-2.0.1-cp39-cp39-manylinux1_x86_64.whl", hash = "sha256:e10e1597f2175365285db1b24019eb6f04d53dcd626c735fc502f1e8b6be9875"},
+    {file = "torch-2.0.1-cp39-cp39-manylinux2014_aarch64.whl", hash = "sha256:423e0ae257b756bb45a4b49072046772d1ad0c592265c5080070e0767da4e490"},
+    {file = "torch-2.0.1-cp39-cp39-win_amd64.whl", hash = "sha256:8742bdc62946c93f75ff92da00e3803216c6cce9b132fbca69664ca38cfb3e18"},
+    {file = "torch-2.0.1-cp39-none-macosx_10_9_x86_64.whl", hash = "sha256:c62df99352bd6ee5a5a8d1832452110435d178b5164de450831a3a8cc14dc680"},
+    {file = "torch-2.0.1-cp39-none-macosx_11_0_arm64.whl", hash = "sha256:671a2565e3f63b8fe8e42ae3e36ad249fe5e567435ea27b94edaa672a7d0c416"},
+]
+
+[package.dependencies]
+filelock = "*"
+jinja2 = "*"
+networkx = "*"
+sympy = "*"
+typing-extensions = "*"
+
+[package.extras]
+opt-einsum = ["opt-einsum (>=3.3)"]
 
 [[package]]
 name = "tornado"
@@ -3056,7 +3340,30 @@ files = [
     {file = "widgetsnbextension-4.0.7.tar.gz", hash = "sha256:ea67c17a7cd4ae358f8f46c3b304c40698bc0423732e3f273321ee141232c8be"},
 ]
 
+[[package]]
+name = "yfinance"
+version = "0.2.22"
+description = "Download market data from Yahoo! Finance API"
+optional = false
+python-versions = "*"
+files = [
+    {file = "yfinance-0.2.22-py2.py3-none-any.whl", hash = "sha256:f48f32a4d3a717cff6702616196da3824b194377a230431462466aeecd20e384"},
+    {file = "yfinance-0.2.22.tar.gz", hash = "sha256:782e05fa53babdc7a4ca4fafbebe6ecccb760ed6bd54ccc2e2a49ba4ad119fc7"},
+]
+
+[package.dependencies]
+appdirs = ">=1.4.4"
+beautifulsoup4 = ">=4.11.1"
+frozendict = ">=2.3.4"
+html5lib = ">=1.1"
+lxml = ">=4.9.1"
+multitasking = ">=0.0.7"
+numpy = ">=1.16.5"
+pandas = ">=1.3.0"
+pytz = ">=2022.5"
+requests = ">=2.26"
+
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "aaf6c6178a06e49031be842a325cfb24720f3ff89f6b22a036349cbc8903e2b1"
+content-hash = "9e47a345e18a3dbbe9a231764aec5ecce2418f72bc6031cb64d406f9da894b3e"
